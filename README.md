@@ -12,7 +12,7 @@ node app crear -d "Sacar a pasear al perro"
 
 Para listar las tareas:
 ```
-node app crear
+node app listar
 ```
 
 Para marcar una tarea como completada:
