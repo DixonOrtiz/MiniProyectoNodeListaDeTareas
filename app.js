@@ -1,11 +1,11 @@
-const {argv} = require("./configuraciones/yargs");
+const {argumentos} = require("./configuraciones/yargs");
 const {agregarTarea, listarTareas, actualizarTarea, borrarTarea} = require("./funciones/por-hacer");
 
-let comando = argv._[0];
+let comando = argumentos._[0];
 
 switch(comando){
     case "crear":
-        agregarTarea(argv.descripcion);
+        agregarTarea(argumentos.descripcion);
         break;
     
     case "listar":
@@ -13,11 +13,11 @@ switch(comando){
         break;
 
     case "actualizar":
-        actualizarTarea(argv.descripcion, argv.completado);
+        actualizarTarea(argumentos.descripcion, argumentos.completado);
         break;
     
     case "borrar":
-        borrarTarea(argv.descripcion);
+        borrarTarea(argumentos.descripcion);
         break;
     
     default:

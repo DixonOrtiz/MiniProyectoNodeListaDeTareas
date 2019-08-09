@@ -12,7 +12,7 @@ const completado = {
 
 }
 
-const argv = require("yargs")
+const argumentos = require("yargs")
     .command("crear", "Se crea una tarea por hacer", {
         descripcion
     })
@@ -27,5 +27,5 @@ const argv = require("yargs")
     .argv;
 
     module.exports = {
-        argv
+        argumentos
     }
